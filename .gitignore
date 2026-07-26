@@ -1,0 +1,27 @@
+# Release archives
+*.mrpack
+*.zip
+*.7z
+
+# Minecraft runtime data
+logs/
+cache/
+caches/
+crash-reports/
+saves/
+run/
+screenshots/
+
+# Build and local staging
+.gradle/
+build/
+_mrpack_*/
+_audit_*/
+*_cache/
+local/
+*.bak
+*.tmp
+
+# Local launcher and secrets
+prism-instance/
+.env
