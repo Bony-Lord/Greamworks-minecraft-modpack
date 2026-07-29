@@ -17,11 +17,19 @@ screenshots/
 build/
 _mrpack_*/
 _audit_*/
+_logs_analysis_*/
+_recipe_corpus_*/
+_incoming/
+_inspect_*/
+_tmp_*/
 *_cache/
 local/
+*.javap.txt
 *.bak
 *.tmp
 
 # Local launcher and secrets
 prism-instance/
+instance.cfg
+mmc-pack.json
 .env
