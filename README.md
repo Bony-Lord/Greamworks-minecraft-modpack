@@ -4,17 +4,21 @@ NeoForge 1.21.1 modpack project for the Greamworks progression pack.
 
 ## Current baseline
 
-- Pack version: **v232.60**
-- Focus: Create-centered progression, Cult of Azazel endgame, custom harvest tiers, EMI-visible static recipes, and conservative Modrinth updates.
-- Release artifact: `Greamworks_v232.60_Recipes_Azazel_Safe_Updates.mrpack`
-- Third-party JARs and resource packs are kept unmodified. Pack-specific behavior is implemented with KubeJS, datapack overrides, configuration, and separate compatibility code where needed.
+- Pack version: **v232.104**
+- Minecraft: **1.21.1**
+- NeoForge: **21.1.244**
+- Focus: Create-centered progression, Cult of Azazel endgame, custom harvest tiers, EMI-visible recipes, native cross-mod fluid interactions, and conservative performance tuning.
+- Release artifact: `Greamworks_v232.104_EMI_Fluid_Interactions_Book_Repair.mrpack`
+- Core pack modules: `greamworks-fixes` 1.0.40, `greamworks-tweaks` 1.0.9, and `greamworks-void-dimension` 1.1.1.
+- Third-party JARs and resource packs remain unmodified. Pack behavior is implemented with KubeJS, datapack overrides, configuration, and separate compatibility mods.
 
-## v232.60 highlights
+## v232.104 highlights
 
-- 1070 custom harvest assignments, including axe, shovel, and hoe families.
-- 60 mechanism recipes, 23 cross-mod machine recipes, 6 Black Steel recipes, and 3 final progression recipes.
-- Omni-Alloy, Blackstone Pedestal, crafted Azazel mask, and humanoid Azazel ring reward progression.
-- CBC Advanced Technology is excluded because its 0.1.4c projectile code is binary-incompatible with Create Big Cannons 5.11.7.
-- 17 conservative NeoForge 1.21.1 Modrinth updates.
+- 15 authoritative fluid-collision recipes implemented through NeoForge `FluidInteractionRegistry`.
+- Matching EMI recipes in the vanilla **World Interaction** category, including calcite formation.
+- Removed the old KubeJS world scanner and stale item-information entries.
+- Repaired 106 Field Manual recipe references and invalid item IDs across 60 icon pages.
+- Retained the v232.102 conservative performance pass and Power Level guard fixes.
+- Cleaned local release history so only the current v232.104 artifact and the explicit v229 backup remain outside source control.
 
-Runtime logs, worlds, caches, crash reports, and exported local instance data are intentionally excluded from version control.
+Runtime logs, worlds, caches, crash reports, local exports, staging directories, and release archives are intentionally excluded from version control.
