@@ -2,6 +2,7 @@
 *.mrpack
 *.zip
 *.7z
+!releases/**/*.mrpack
 
 # Minecraft runtime data
 logs/
