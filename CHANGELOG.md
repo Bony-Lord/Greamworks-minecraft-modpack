@@ -2,12 +2,21 @@
 
 Only stable progression baselines are listed here. Intermediate crash-fix and test builds are intentionally omitted.
 
+## v232.105 - 2026-07-30
+
+- Fixed all 15 world fluid reactions after v232.104 failed to trigger them.
+- Kept NeoForge `FluidInteractionRegistry` as the primary path and added a narrow server-side neighbor-update fallback for modded fluid blocks.
+- Changed adjacent-fluid matching from registry-name strings to resolved `FluidType` instances.
+- Added the required NeoForge `@EmiEntrypoint`, allowing the recipes to appear under EMI World Interaction.
+- Added startup diagnostics reporting registered and skipped fluid reactions.
+- Did not add Create: Easy Stone Generators or any other third-party generator mod.
+
 ## v232.104 - 2026-07-30
 
 - Updated the tracked baseline from v232.60 to v232.104 on Minecraft 1.21.1 and NeoForge 21.1.244.
-- Replaced the KubeJS fluid-world scanner with 15 native NeoForge `FluidInteractionRegistry` reactions.
+- Attempted to replace the KubeJS fluid-world scanner with 15 native NeoForge `FluidInteractionRegistry` reactions; runtime testing later showed that they did not trigger.
 - Added cross-mod stone formation using Chemica and TFMG fluids, including all raw Create stone families and calcite.
-- Added an EMI plugin that mirrors the authoritative Java table in the World Interaction category.
+- Added an EMI plugin, but omitted NeoForge's required `@EmiEntrypoint`, so it was not discovered.
 - Removed stale KubeJS information entries for the old oxygen and neighboring-stone behavior.
 - Repaired 106 Field Manual recipe references and removed invalid trailing periods from item IDs across 60 icon pages.
 - Retained greamworks-fixes 1.0.40, greamworks-tweaks 1.0.9, the Power Level double-application guard, and the conservative v232.102 performance pass.

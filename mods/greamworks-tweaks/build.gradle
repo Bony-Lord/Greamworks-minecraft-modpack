@@ -1,0 +1,38 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.141'
+}
+
+group = 'works.gream'
+version = '1.0.10'
+
+base {
+    archivesName = 'greamworks-tweaks'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+dependencies {
+    compileOnly files('../minecraft/mods/emi-1.1.24+1.21.1+neoforge.jar')
+    compileOnly files('../_tools/current_mods_cache/dungeon_difficulty-neoforge-3.6.10+1.21.1.jar')
+    compileOnly files('../minecraft/mods/artifacts-neoforge-13.2.1.jar')
+    compileOnly files('../minecraft/mods/lootr-neoforge-1.21.1-1.11.37.121.jar')
+    compileOnly files('../_tools/current_mods_cache/critical_strike-neoforge-1.0.4+1.21.1.jar')
+}
+
+neoForge {
+    version = '21.1.244'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.named('jar', Jar).configure {
+    manifest {
+        attributes(
+            'Implementation-Version': project.version,
+            'Automatic-Module-Name': 'works.gream.tweaks'
+        )
+    }
+}
