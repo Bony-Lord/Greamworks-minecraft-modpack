@@ -59,7 +59,68 @@ extends LootModifier {
     private static final List<String> COPPER_TIER = List.of("minecraft:chainmail_helmet", "minecraft:chainmail_chestplate", "minecraft:chainmail_leggings", "minecraft:chainmail_boots", "minecraft:golden_helmet", "minecraft:golden_chestplate", "minecraft:golden_leggings", "minecraft:golden_boots", "minecraft:golden_sword", "minecraft:golden_axe", "minecraft:golden_pickaxe", "minecraft:golden_shovel", "minecraft:golden_hoe", "minecraft:stone_sword", "minecraft:stone_axe", "minecraft:stone_pickaxe", "minecraft:stone_shovel", "minecraft:stone_hoe", "minecraft:crossbow", "minecraft:shield", "create_sa:copper_helmet", "create_sa:copper_chestplate", "create_sa:copper_leggings", "create_sa:copper_boots", "create_sa:copper_sword", "create_sa:copper_axe", "create_sa:copper_pickaxe", "create_sa:copper_shovel", "create_sa:copper_hoe");
     private static final List<String> IRON_TIER = List.of("minecraft:iron_helmet", "minecraft:iron_chestplate", "minecraft:iron_leggings", "minecraft:iron_boots", "minecraft:iron_sword", "minecraft:iron_axe", "minecraft:iron_pickaxe", "minecraft:iron_shovel", "minecraft:iron_hoe", "create_sa:zinc_helmet", "create_sa:zinc_chestplate", "create_sa:zinc_leggings", "create_sa:zinc_boots", "create_sa:zinc_sword", "create_sa:zinc_axe", "create_sa:zinc_pickaxe", "create_sa:zinc_shovel", "create_sa:zinc_hoe");
     private static final List<String> DIAMOND_TIER = List.of("minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:diamond_sword", "minecraft:diamond_axe", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_hoe");
-    private static final List<SupplyEntry> COMMON_SUPPLIES = List.of(new SupplyEntry("minecraft:torch", 2, 8), new SupplyEntry("minecraft:arrow", 2, 8), new SupplyEntry("minecraft:coal", 1, 4), new SupplyEntry("minecraft:string", 1, 4), new SupplyEntry("minecraft:bone", 1, 4), new SupplyEntry("minecraft:leather", 1, 3), new SupplyEntry("minecraft:flint", 1, 3), new SupplyEntry("minecraft:paper", 1, 4), new SupplyEntry("minecraft:stick", 2, 6), new SupplyEntry("minecraft:glass_bottle", 1, 3), new SupplyEntry("minecraft:bread", 1, 2), new SupplyEntry("minecraft:baked_potato", 1, 3), new SupplyEntry("minecraft:dried_kelp", 2, 6), new SupplyEntry("minecraft:rotten_flesh", 2, 5), new SupplyEntry("minecraft:gunpowder", 1, 2), new SupplyEntry("minecraft:iron_nugget", 2, 5), new SupplyEntry("minecraft:copper_ingot", 1, 2), new SupplyEntry("minecraft:redstone", 1, 3), new SupplyEntry("minecraft:lapis_lazuli", 1, 3), new SupplyEntry("create:zinc_nugget", 1, 3), new SupplyEntry("create:shaft", 1, 2), new SupplyEntry("create:cogwheel", 1, 1), new SupplyEntry("farmersdelight:rope", 1, 3));
+    private static final List<SupplyEntry> COMMON_SUPPLIES = List.of(
+        new SupplyEntry("minecraft:torch", 2, 8),
+        new SupplyEntry("minecraft:arrow", 2, 8),
+        new SupplyEntry("minecraft:coal", 1, 4),
+        new SupplyEntry("minecraft:string", 1, 4),
+        new SupplyEntry("minecraft:bone", 1, 4),
+        new SupplyEntry("minecraft:leather", 1, 3),
+        new SupplyEntry("minecraft:flint", 1, 3),
+        new SupplyEntry("minecraft:paper", 1, 4),
+        new SupplyEntry("minecraft:stick", 2, 6),
+        new SupplyEntry("minecraft:glass_bottle", 1, 3),
+        new SupplyEntry("minecraft:sweet_berries", 2, 6),
+        new SupplyEntry("minecraft:glow_berries", 1, 4),
+        new SupplyEntry("minecraft:apple", 1, 2),
+        new SupplyEntry("minecraft:raw_chicken", 1, 2),
+        new SupplyEntry("minecraft:raw_cod", 1, 3),
+        new SupplyEntry("minecraft:raw_salmon", 1, 2),
+        new SupplyEntry("minecraft:potato", 1, 4),
+        new SupplyEntry("minecraft:dried_kelp", 2, 6),
+        new SupplyEntry("minecraft:rotten_flesh", 2, 5),
+        new SupplyEntry("minecraft:gunpowder", 1, 2),
+        new SupplyEntry("minecraft:iron_nugget", 2, 5),
+        new SupplyEntry("minecraft:copper_ingot", 1, 2),
+        new SupplyEntry("minecraft:raw_copper", 1, 2),
+        new SupplyEntry("minecraft:redstone", 1, 3),
+        new SupplyEntry("minecraft:lapis_lazuli", 1, 3),
+        new SupplyEntry("create:andesite_alloy", 1, 2),
+        new SupplyEntry("create:zinc_nugget", 1, 3),
+        new SupplyEntry("create:shaft", 1, 2),
+        new SupplyEntry("create:cogwheel", 1, 1),
+        new SupplyEntry("farmersdelight:rope", 1, 3),
+        new SupplyEntry("farmersdelight:canvas", 1, 2),
+        new SupplyEntry("silentgear:template_board", 1, 3)
+    );
+    private static final List<String> FIELD_GEAR = List.of(
+        "minecraft:stone_sword",
+        "minecraft:stone_axe",
+        "minecraft:stone_pickaxe",
+        "minecraft:stone_shovel",
+        "minecraft:stone_hoe",
+        "sticknstone:wooden_longsword",
+        "sticknstone:wooden_rapier",
+        "sticknstone:wooden_spear",
+        "sticknstone:wooden_cutlass",
+        "sticknstone:wooden_chakram",
+        "sticknstone:stone_longsword",
+        "sticknstone:stone_rapier",
+        "sticknstone:stone_spear",
+        "sticknstone:stone_glaive",
+        "sticknstone:stone_cutlass",
+        "sticknstone:stone_chakram"
+    );
+    private static final List<String> SILENT_TEMPLATES = List.of(
+        "silentgear:sword_template",
+        "silentgear:pickaxe_template",
+        "silentgear:axe_template",
+        "silentgear:shovel_template",
+        "silentgear:knife_template",
+        "silentgear:dagger_template",
+        "silentgear:spear_template",
+        "silentgear:shield_template"
+    );
 
     private UniversalChestGearLootModifier(LootItemCondition[] conditions) {
         super(conditions);
@@ -74,6 +135,12 @@ extends LootModifier {
         }
         if (context.getRandom().nextFloat() < 0.6f) {
             UniversalChestGearLootModifier.addRandomSupply(generatedLoot, context);
+        }
+        if (context.getRandom().nextFloat() < 0.22f) {
+            UniversalChestGearLootModifier.addUnscaledItem(generatedLoot, context, FIELD_GEAR, 1, 1);
+        }
+        if (context.getRandom().nextFloat() < 0.08f) {
+            UniversalChestGearLootModifier.addUnscaledItem(generatedLoot, context, SILENT_TEMPLATES, 1, 1);
         }
         tier = (roll = context.getRandom().nextFloat()) < 0.01f ? DIAMOND_TIER : (roll < 0.06f ? IRON_TIER : (roll < 0.16f ? COPPER_TIER : (roll < 0.31f ? LOW_TIER : null)));
         if (tier != null) {
@@ -115,6 +182,26 @@ extends LootModifier {
             int count = entry.minCount() + context.getRandom().nextInt(entry.maxCount() - entry.minCount() + 1);
             generatedLoot.add(new ItemStack((ItemLike)item, count));
             break;
+        }
+    }
+
+    private static void addUnscaledItem(
+        ObjectArrayList<ItemStack> generatedLoot,
+        LootContext context,
+        List<String> candidates,
+        int minCount,
+        int maxCount
+    ) {
+        int start = context.getRandom().nextInt(candidates.size());
+        for (int offset = 0; offset < candidates.size(); ++offset) {
+            ResourceLocation id = ResourceLocation.parse(candidates.get((start + offset) % candidates.size()));
+            Item item = BuiltInRegistries.ITEM.getOptional(id).orElse(Items.AIR);
+            if (item == Items.AIR) {
+                continue;
+            }
+            int count = minCount + context.getRandom().nextInt(maxCount - minCount + 1);
+            generatedLoot.add(new ItemStack(item, count));
+            return;
         }
     }
 

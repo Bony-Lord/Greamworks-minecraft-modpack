@@ -1,0 +1,17 @@
+{
+  "name": "Greamworks v232.106",
+  "version_number": "232.106",
+  "version_type": "release",
+  "game_versions": [
+    "1.21.1"
+  ],
+  "loaders": [
+    "neoforge"
+  ],
+  "featured": false,
+  "file_parts": [
+    "Greamworks_v232.106_Processing_Loot_CreativeTabs.mrpack"
+  ],
+  "primary_file": "Greamworks_v232.106_Processing_Loot_CreativeTabs.mrpack",
+  "changelog": "Spawner range reduced to 20 blocks. Added 23 Create mixer fluid-stone recipes, Chemica/Silent Gear ore crushing, Create milling routes, Apothic Enchanting infusions, hidden-item creative content, broader chest supplies, and Stick n Stone wooden durability balance. Create: Easy Stone Generators was not added."
+}

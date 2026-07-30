@@ -2,6 +2,19 @@
 
 Only stable progression baselines are listed here. Intermediate crash-fix and test builds are intentionally omitted.
 
+## v232.106 - 2026-07-30
+
+- Reduced the custom vanilla-spawner activation range from 48 to 20 blocks.
+- Added 23 Create mechanical-mixer recipes mirroring the registered fluid-stone world interactions.
+- Added Chemica and Silent Gear ore crushing routes with chance-based byproducts.
+- Added additional Create milling recipes for modded stones, ores, and industrial byproducts.
+- Added 11 Apothic Enchanting infusion recipes using Eterna, Quanta, and Arcana requirements.
+- Added a hidden-items creative tab, Omni-Alloy and the guide book to the Greamworks tab, and Void Shard to Cataclysm.
+- Added low-tier supplies, Stick n Stone equipment, Andesite Alloy, and Silent Gear templates to global chest loot.
+- Reduced Stick n Stone wooden weapon durability to 20.
+- Added `MODRINTH_UPLOAD_v232.106.json` metadata for manual Modrinth uploads.
+- Did not add Create: Easy Stone Generators or another third-party stone generator.
+
 ## v232.105 - 2026-07-30
 
 - Fixed all 15 world fluid reactions after v232.104 failed to trigger them.

@@ -43,7 +43,16 @@ public final class FluidStoneReactions {
         reaction("chemica:waste_slurry", "chemica:caustic_soda", "minecraft:tuff"),
 
         reaction("tfmg:liquid_concrete", "minecraft:water", "tfmg:concrete"),
-        reaction("tfmg:liquid_asphalt", "tfmg:cooling_fluid", "tfmg:asphalt")
+        reaction("tfmg:liquid_asphalt", "tfmg:cooling_fluid", "tfmg:asphalt"),
+
+        reaction("tfmg:molten_slag", "chemica:distilled_water", "minecraft:basalt"),
+        reaction("chemica:molten_glass", "tfmg:liquid_silicon", "minecraft:smooth_basalt"),
+        reaction("tfmg:liquid_concrete", "chemica:brine", "minecraft:dripstone_block"),
+        reaction("chemica:molten_glass", "chemica:brine", "minecraft:sandstone"),
+        reaction("chemica:molten_glass", "chemica:phosphoric_acid", "minecraft:quartz_block"),
+        reaction("tfmg:liquid_concrete", "chemica:waste_slurry", "minecraft:deepslate"),
+        reaction("tfmg:liquid_asphalt", "chemica:molten_glass", "minecraft:obsidian"),
+        reaction("chemica:waste_slurry", "tfmg:sulfuric_acid", "minecraft:mud")
     );
     private static final Map<ResourceLocation, List<ResolvedReaction>> RESOLVED_BY_SOURCE =
         new HashMap<>();
